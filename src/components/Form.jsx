@@ -10,10 +10,11 @@ function Form({addTask}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         addTask(userInput);
+        setUserInput('');
     }
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" onChange={handleChange} />
+            <input type="text" value={userInput} onChange={handleChange} />
             <button>Add</button>
         </form>
     )

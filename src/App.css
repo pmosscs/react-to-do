@@ -180,5 +180,13 @@ form {
   color: green;
 }
 
+.complete {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+
+
 
 /* ? CREATED BY BRADYYYYYY */

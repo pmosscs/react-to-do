@@ -6,7 +6,7 @@ import List from "./components/List";
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  console.log(tasks, "this is here");
+  console.log(tasks);
 
   const addTask = (newTask) => {
     setTasks([...tasks, newTask]);
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header />
       <Form addTask={addTask} />
-      <List />
+      <List tasks={tasks} />
     </div>
   );
 }
